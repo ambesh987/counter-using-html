@@ -1,0 +1,78 @@
+<!-- html -> markup language  comment: ctrl+/ -->
+<!-- html language-> scripting language-> HTML5
+css-> cascading style sheets -> excel sheet, style-> CSS3
+js-> functionality, python similar, language-> ES6 -->
+<!-- xml -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Counter</title>
+    <style>
+       .btn-1{
+            width:90px;
+            height:60px;
+            font-size:30px;
+            background-color: green;
+            color:honeydew;
+            cursor:pointer;
+       }
+       .btn-1:hover{
+        background-color: rgb(248, 155, 48);
+        color:white;
+       }
+       .btn-2{
+            width:90px;
+            height:60px;
+            font-size:30px;
+            background-color: red;
+            color:honeydew;
+            cursor:pointer;
+       }
+       .btn-2:hover{
+        background-color: rgb(248, 155, 48);
+        color:white;
+       }
+       h1{
+        color:black;
+        margin-left:20px;
+        font-size:45px;
+       }
+       #count{
+        color:black;
+        margin-left:80px;
+        font-size:45px;
+       }
+       div{
+        margin-left:42.5%;
+       }
+       
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Counter</h1>
+    <h2 id="count"> </h2>
+    <button class="btn-1" onclick="increment() ">+</button>
+    <button class="btn-2" onclick="decrement()">-</button>
+    </div>
+
+    <script>
+        var counter=0;
+        document.getElementById("count").innerText=counter;
+        function increment(){
+            counter=counter+1; //counter++
+            document.getElementById("count").innerText=counter;
+        }
+        function decrement(){
+            counter=counter-1;
+            document.getElementById("count").innerText=counter;
+        }
+    </script>
+
+</body>
+</html>
